@@ -1,4 +1,4 @@
-# KG-BERT: BERT for Knowledge Graph Completion
+__#__ KG-BERT: BERT for Knowledge Graph Completion
 
 The repository is modified from [pytorch-pretrained-BERT](https://github.com/huggingface/pytorch-pretrained-BERT) and tested on Python 3.5+.
 
