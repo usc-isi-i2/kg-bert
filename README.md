@@ -5,7 +5,18 @@ The repository is modified from [pytorch-pretrained-BERT](https://github.com/hug
 
 ## Installing requirement packages
 
+The requirement packages for XXX prediction.ipynb and XXX prediction (kg-bert).ipynb is differet.
+
+Therefore, please use different environment to run them
+
+For XXX prediction.ipynb
 ```bash
+cd requirement_normal
+pip install -r requirements.txt
+```
+For XXX prediction (kg-bert).ipynb
+```bash
+cd requirement_kg_bert
 pip install -r requirements.txt
 ```
 
@@ -18,8 +29,26 @@ pip install -r requirements.txt
 (3) relation2text.txt in each dataset contains relation textual sequences.
 
 ## Reproducing results
- 
-### 1. Triple Classification
+### 1. Link Prediction and Relation Prediction on WordNet and WebChild
+Download model from google drive:
+
+**Relation Prediction**:
+
+Go to: https://drive.google.com/drive/u/1/folders/1j_q1n2VqhiOsplO_n33ugSVtjm_wNnO0
+
+Download pytorch_model1.zip and pytorch_model2.zip. Unzip and put them in the folder "./output_wc_result" and "./output_wc_result2".
+Download kgtk_webchild_comparative.tsv and put them into a new folder in ./data/wc.
+Run the notebook **Relation_Prediction_(kg-bert).ipynb**
+
+**Link Prediction**:
+
+Go to: https://drive.google.com/drive/u/1/folders/1K-4DBLoAdW0bjGQDhcX2jHq5fVoKRK3n
+
+Repeat the same process, but save model in the folder, "./output_wn_result".
+Download kgtk_wordnet.tsv and put them into a new folder in ./data/wn.
+Run the notebook **Link_Prediction_(kg-bert).ipynb**
+
+### 2. Triple Classification
 
 #### WN11
 
@@ -60,7 +89,7 @@ python run_bert_triple_classifier.py
 ```
 
 
-### 2. Relation Prediction
+### 3. Relation Prediction
 
 #### FB15K
 
@@ -81,7 +110,7 @@ python3 run_bert_relation_prediction.py
 --eval_batch_size 512
 ```
 
-### 3. Link Prediction
+### 4. Link Prediction
 
 #### WN18RR
 

@@ -1,0 +1,12 @@
+numpy==1.19.2
+sentence_transformers==0.4.0
+scipy==1.5.4
+torch==1.7.1
+tqdm==4.55.0
+rltk==2.0.0a15
+nltk==3.5
+apex==0.9.10dev
+ptvsd==4.3.2
+pytorch_pretrained_bert==0.6.2
+scikit_learn==0.24.0
+wikipedia==1.4.0
