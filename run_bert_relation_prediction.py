@@ -96,12 +96,12 @@ class DataProcessor(object):
     @classmethod
     def _read_tsv(cls, input_file, quotechar=None):
         """Reads a tab separated value file."""
-        with open(input_file, "r", encoding="utf-8") as f:
+        with open(input_file, "r", encoding="latin1") as f:
             reader = csv.reader(f, delimiter="\t", quotechar=quotechar)
             lines = []
             for line in reader:
                 if sys.version_info[0] == 2:
-                    line = list(unicode(cell, 'utf-8') for cell in line)
+                    line = list(unicode(cell, 'latin1') for cell in line)
                 lines.append(line)
             return lines
 
@@ -130,7 +130,7 @@ class KGProcessor(DataProcessor):
     def get_relations(self, data_dir):
         """Gets all labels (relations) in the knowledge graph."""
         # return list(self.labels)
-        with open(os.path.join(data_dir, "relations.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "relations.txt"), 'r',encoding="latin1") as f:
             lines = f.readlines()
             relations = []
             for line in lines:
@@ -140,7 +140,7 @@ class KGProcessor(DataProcessor):
     def get_entities(self, data_dir):
         """Gets all entities in the knowledge graph."""
         # return list(self.labels)
-        with open(os.path.join(data_dir, "entities.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "entities.txt"), 'r',encoding="latin1") as f:
             lines = f.readlines()
             entities = []
             for line in lines:
@@ -163,14 +163,14 @@ class KGProcessor(DataProcessor):
         """Creates examples for the training and dev sets."""
         # entity to text
         ent2text = {}
-        with open(os.path.join(data_dir, "entity2text.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "entity2text.txt"), 'r',encoding="latin1") as f:
             ent_lines = f.readlines()
             for line in ent_lines:
                 temp = line.strip().split('\t')
                 ent2text[temp[0]] = temp[1]
 
         if data_dir.find("FB15") != -1:
-            with open(os.path.join(data_dir, "entity2text.txt"), 'r') as f:
+            with open(os.path.join(data_dir, "entity2textlong.txt"), 'r',encoding="latin1") as f:
                 ent_lines = f.readlines()
                 for line in ent_lines:
                     temp = line.strip().split('\t')

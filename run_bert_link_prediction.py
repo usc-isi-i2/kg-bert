@@ -41,11 +41,13 @@ from pytorch_pretrained_bert.modeling import BertForSequenceClassification, Bert
 from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
 
-os.environ['CUDA_VISIBLE_DEVICES']= '1'
+from nltk.corpus import wordnet as wn
+
+os.environ['CUDA_VISIBLE_DEVICES']= '2'
 #torch.backends.cudnn.deterministic = True
 
 logger = logging.getLogger(__name__)
-
+NLTK_corpus = False
 
 class InputExample(object):
     """A single training/test example for simple sequence classification."""
@@ -117,17 +119,17 @@ class KGProcessor(DataProcessor):
     def get_train_examples(self, data_dir):
         """See base class."""
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, "train.tsv")), "train", data_dir)
+            self._read_tsv(os.path.join(data_dir, "train.tsv")), "train", data_dir,corup_type=NLTK_corpus)
 
     def get_dev_examples(self, data_dir):
         """See base class."""
         return self._create_examples(
-            self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev", data_dir)
+            self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev", data_dir,corup_type=NLTK_corpus)
 
     def get_test_examples(self, data_dir):
       """See base class."""
       return self._create_examples(
-          self._read_tsv(os.path.join(data_dir, "test.tsv")), "test", data_dir)
+          self._read_tsv(os.path.join(data_dir, "test.tsv")), "test", data_dir,corup_type=NLTK_corpus)
 
     def get_relations(self, data_dir):
         """Gets all labels (relations) in the knowledge graph."""
@@ -165,7 +167,7 @@ class KGProcessor(DataProcessor):
         """Gets test triples."""
         return self._read_tsv(os.path.join(data_dir, "test.tsv"))
 
-    def _create_examples(self, lines, set_type, data_dir):
+    def _create_examples(self, lines, set_type, data_dir, corup_type=NLTK_corpus):
         """Creates examples for the training and dev sets."""
         # entity to text
         ent2text = {}
@@ -214,7 +216,7 @@ class KGProcessor(DataProcessor):
                 examples.append(
                     InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label=label))
                 
-            elif set_type == "train":
+            elif set_type == "train" and not corup_type:
                 guid = "%s-%s" % (set_type, i)
                 text_a = head_ent_text
                 text_b = relation_text
@@ -253,7 +255,46 @@ class KGProcessor(DataProcessor):
                                 break
                         tmp_tail_text = ent2text[tmp_tail]
                         examples.append(
-                            InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = tmp_tail_text, label="0"))                                                  
+                            InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = tmp_tail_text, label="0"))
+
+            elif set_type == "train" and corup_type:
+                guid = "%s-%s" % (set_type, i)
+                text_a = head_ent_text
+                text_b = relation_text
+                text_c = tail_ent_text 
+                examples.append(
+                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="1"))
+
+                # corrupting head and tail
+                ent_a_modify = ent_a.split(":")[1].split(".")[0]
+                ent_c_modify = ent_c.split(":")[1].split(".")[0]
+                
+                # corrupting head
+                text_a_candits = wn.synsets(ent_a_modify)
+                for item in text_a_candits:
+                    if item.name() == ent_a_modify:
+                        continue
+                        
+                    if remove_entity and item.name() not in entity_list:
+                        continue
+                    text_a = item.definition()
+
+                    examples.append(
+                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0"))
+                
+                #corrupting tail
+                text_c_candits = wn.synsets(ent_c_modify)
+                for item in text_c_candits:
+                    if item.name() == ent_c_modify:
+                        continue
+                        
+                    if remove_entity and item.name() not in entity_list:
+                        continue
+                        
+                    text_c = item.definition()
+
+                    examples.append(
+                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0"))                                                  
         return examples
 
 def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer, print_info = True):
@@ -424,6 +465,10 @@ def main():
                         help="The output directory where the model predictions and checkpoints will be written.")
 
     ## Other parameters
+    parser.add_argument("--NLTK_corpus",
+                        action='store_true',
+                        help="Whether to corrupt word by NLTK WordNet.")
+
     parser.add_argument("--cache_dir",
                         default="",
                         type=str,
@@ -493,6 +538,7 @@ def main():
     parser.add_argument('--server_ip', type=str, default='', help="Can be used for distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
     args = parser.parse_args()
+    NLTK_corpus = args.NLTK_corpus
 
     if args.server_ip and args.server_port:
         # Distant debugging - see https://code.visualstudio.com/docs/python/debugging#_attach-to-a-local-script
@@ -917,7 +963,7 @@ def main():
                         # may be slow
                         head_corrupt_list.append(tmp_triple)
 
-            tmp_examples = processor._create_examples(head_corrupt_list, "test", args.data_dir)
+            tmp_examples = processor._create_examples(head_corrupt_list, "test", args.data_dir,corup_type=args.NLTK_corpus)
             print(len(tmp_examples))
             tmp_features = convert_examples_to_features(tmp_examples, label_list, args.max_seq_length, tokenizer, print_info = False)
             all_input_ids = torch.tensor([f.input_ids for f in tmp_features], dtype=torch.long)
@@ -976,7 +1022,7 @@ def main():
                         # may be slow
                         tail_corrupt_list.append(tmp_triple)
 
-            tmp_examples = processor._create_examples(tail_corrupt_list, "test", args.data_dir)
+            tmp_examples = processor._create_examples(tail_corrupt_list, "test", args.data_dir,corup_type=args.NLTK_corpus)
             #print(len(tmp_examples))
             tmp_features = convert_examples_to_features(tmp_examples, label_list, args.max_seq_length, tokenizer, print_info = False)
             all_input_ids = torch.tensor([f.input_ids for f in tmp_features], dtype=torch.long)
