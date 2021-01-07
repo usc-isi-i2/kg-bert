@@ -41,11 +41,11 @@ from pytorch_pretrained_bert.modeling import BertForSequenceClassification, Bert
 from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
 
-os.environ['CUDA_VISIBLE_DEVICES']= '3'
+os.environ['CUDA_VISIBLE_DEVICES']= '1'
 #torch.backends.cudnn.deterministic = True
 
 logger = logging.getLogger(__name__)
-
+store_input = False
 
 class InputExample(object):
     """A single training/test example for simple sequence classification."""
@@ -163,7 +163,7 @@ class KGProcessor(DataProcessor):
         """Creates examples for the training and dev sets."""
         # entity to text
         ent2text = {}
-        with open(os.path.join(data_dir, "entity2text.txt"), 'r',encoding="latin1") as f:
+        with open(os.path.join(data_dir, "entity2textlong.txt"), 'r',encoding="latin1") as f:
             ent_lines = f.readlines()
             for line in ent_lines:
                 temp = line.strip().split('\t')
@@ -327,6 +327,10 @@ def main():
                         help="The output directory where the model predictions and checkpoints will be written.")
 
     ## Other parameters
+    parser.add_argument("--store_input",
+                        action='store_true',
+                        help="Whether to store the input")
+
     parser.add_argument("--cache_dir",
                         default="",
                         type=str,
@@ -396,6 +400,7 @@ def main():
     parser.add_argument('--server_ip', type=str, default='', help="Can be used for distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
     args = parser.parse_args()
+    store_input=args.store_input
 
     if args.server_ip and args.server_port:
         # Distant debugging - see https://code.visualstudio.com/docs/python/debugging#_attach-to-a-local-script
@@ -535,6 +540,39 @@ def main():
         all_segment_ids = torch.tensor([f.segment_ids for f in train_features], dtype=torch.long)
 
         all_label_ids = torch.tensor([f.label_id for f in train_features], dtype=torch.long)
+
+        if store_input:
+            with open("wc_TrainResult_kg_bert.txt","w") as f1:
+                rel2id={}
+                with open(os.path.join(args.data_dir, "relation2id.txt"),"r",encoding="latin1") as f:
+                    _=f.readline()
+                    for line in f:
+                        temp = line.strip().split('\t')
+                        rel2id[temp[0]] = temp[1]
+
+                sort_items = sorted(rel2id.items(),key=lambda k:int(k[1]))
+                f1.write("relation id list:\n")
+                f1.write("\n".join("\t".join(_) for _ in sort_items))
+                f1.write("\n")
+                f1.write("############################################################\n")
+                train_triples = processor.get_train_triples(args.data_dir)
+                for idx in range(len(train_features)):
+                    example_=train_examples[idx]
+                    input_ids = all_input_ids[idx].cpu().numpy()
+                    input_tokens = tokenizer.convert_ids_to_tokens(input_ids)
+
+                    f1.write("The Actual Triple to Test: "+"\t".join(train_triples[idx])+"\n")
+                    f1.write("Label: {}\n".format(rel2id[train_triples[idx][1]]))
+                    f1.write("\n")
+                    f1.write("-----Prediction Detail-----\n")
+                    f1.write("Triple_to_Predict: {}\n".format("\t".join(train_triples[idx])))
+                    f1.write("Text of Triples:{a}\t{b}\n".format(a=example_.text_a,
+                                                                    b=example_.text_b))
+                    f1.write("Input_Tokens: {}\n".format(",".join(input_tokens)))
+                    f1.write("Input_Ids: {}\n".format(",".join([str(_) for _ in input_ids])))
+                    f1.write("############################################################\n")
+            print("file generated")
+            exit()
 
         train_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
         if args.local_rank == -1:

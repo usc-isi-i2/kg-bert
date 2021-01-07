@@ -43,16 +43,17 @@ from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
 
 from nltk.corpus import wordnet as wn
 
-os.environ['CUDA_VISIBLE_DEVICES']= '2'
+os.environ['CUDA_VISIBLE_DEVICES']= '1'
 #torch.backends.cudnn.deterministic = True
 
 logger = logging.getLogger(__name__)
-NLTK_corpus = False
+NLTK_corpus = True
+store_input = False
 
 class InputExample(object):
     """A single training/test example for simple sequence classification."""
 
-    def __init__(self, guid, text_a, text_b=None, text_c=None, label=None):
+    def __init__(self, guid, text_a, text_b=None, text_c=None, label=None, head=None, relation=None, tail=None, replace=None):
         """Constructs a InputExample.
 
         Args:
@@ -71,6 +72,10 @@ class InputExample(object):
         self.text_b = text_b
         self.text_c = text_c
         self.label = label
+        self.head=head
+        self.tail = tail
+        self.relation=relation
+        self.replace=replace
 
 
 class InputFeatures(object):
@@ -86,11 +91,11 @@ class InputFeatures(object):
 class DataProcessor(object):
     """Base class for data converters for sequence classification data sets."""
 
-    def get_train_examples(self, data_dir):
+    def get_train_examples(self, data_dir,corup_type=NLTK_corpus):
         """Gets a collection of `InputExample`s for the train set."""
         raise NotImplementedError()
 
-    def get_dev_examples(self, data_dir):
+    def get_dev_examples(self, data_dir,corup_type=NLTK_corpus):
         """Gets a collection of `InputExample`s for the dev set."""
         raise NotImplementedError()
 
@@ -116,17 +121,17 @@ class KGProcessor(DataProcessor):
     def __init__(self):
         self.labels = set()
     
-    def get_train_examples(self, data_dir):
+    def get_train_examples(self, data_dir,corup_type=NLTK_corpus):
         """See base class."""
         return self._create_examples(
             self._read_tsv(os.path.join(data_dir, "train.tsv")), "train", data_dir,corup_type=NLTK_corpus)
 
-    def get_dev_examples(self, data_dir):
+    def get_dev_examples(self, data_dir,corup_type=NLTK_corpus):
         """See base class."""
         return self._create_examples(
             self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev", data_dir,corup_type=NLTK_corpus)
 
-    def get_test_examples(self, data_dir):
+    def get_test_examples(self, data_dir,corup_type=NLTK_corpus):
       """See base class."""
       return self._create_examples(
           self._read_tsv(os.path.join(data_dir, "test.tsv")), "test", data_dir,corup_type=NLTK_corpus)
@@ -148,7 +153,7 @@ class KGProcessor(DataProcessor):
     def get_entities(self, data_dir):
         """Gets all entities in the knowledge graph."""
         # return list(self.labels)
-        with open(os.path.join(data_dir, "entities.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "entities.txt"), 'r',encoding="utf8") as f:
             lines = f.readlines()
             entities = []
             for line in lines:
@@ -171,7 +176,7 @@ class KGProcessor(DataProcessor):
         """Creates examples for the training and dev sets."""
         # entity to text
         ent2text = {}
-        with open(os.path.join(data_dir, "entity2text.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "entity2text.txt"), 'r',encoding="utf8") as f:
             ent_lines = f.readlines()
             for line in ent_lines:
                 temp = line.strip().split('\t')
@@ -180,7 +185,7 @@ class KGProcessor(DataProcessor):
                     ent2text[temp[0]] = temp[1]#[:end]
   
         if data_dir.find("FB15") != -1:
-            with open(os.path.join(data_dir, "entity2textlong.txt"), 'r') as f:
+            with open(os.path.join(data_dir, "entity2textlong.txt"), 'r',encoding="utf8") as f:
                 ent_lines = f.readlines()
                 for line in ent_lines:
                     temp = line.strip().split('\t')
@@ -190,7 +195,7 @@ class KGProcessor(DataProcessor):
         entities = list(ent2text.keys())
 
         rel2text = {}
-        with open(os.path.join(data_dir, "relation2text.txt"), 'r') as f:
+        with open(os.path.join(data_dir, "relation2text.txt"), 'r',encoding="utf8") as f:
             rel_lines = f.readlines()
             for line in rel_lines:
                 temp = line.strip().split('\t')
@@ -198,6 +203,7 @@ class KGProcessor(DataProcessor):
 
         lines_str_set = set(['\t'.join(line) for line in lines])
         examples = []
+
         for (i, line) in enumerate(lines):
             
             head_ent_text = ent2text[line[0]]
@@ -214,7 +220,7 @@ class KGProcessor(DataProcessor):
                 text_c = tail_ent_text 
                 self.labels.add(label)
                 examples.append(
-                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label=label))
+                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label=label, head=line[0],relation=line[1],tail=line[2]))
                 
             elif set_type == "train" and not corup_type:
                 guid = "%s-%s" % (set_type, i)
@@ -222,7 +228,7 @@ class KGProcessor(DataProcessor):
                 text_b = relation_text
                 text_c = tail_ent_text 
                 examples.append(
-                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="1"))
+                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="1", head=line[0],relation=line[1],tail=line[2]))
 
                 rnd = random.random()
                 guid = "%s-%s" % (set_type + "_corrupt", i)
@@ -240,7 +246,8 @@ class KGProcessor(DataProcessor):
                                 break                    
                         tmp_head_text = ent2text[tmp_head]
                         examples.append(
-                            InputExample(guid=guid, text_a=tmp_head_text, text_b=text_b, text_c = text_c, label="0"))       
+                            InputExample(guid=guid, text_a=tmp_head_text, text_b=text_b, text_c = text_c, label="0", head=line[0],relation=line[1],tail=line[2],replace=("head",tmp_head)))
+  
                 else:
                     # corrupting tail
                     tmp_tail = ''
@@ -255,15 +262,17 @@ class KGProcessor(DataProcessor):
                                 break
                         tmp_tail_text = ent2text[tmp_tail]
                         examples.append(
-                            InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = tmp_tail_text, label="0"))
+                            InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = tmp_tail_text, label="0", head=line[0],relation=line[1],tail=line[2],replace=("tail",tmp_tail)))
 
             elif set_type == "train" and corup_type:
                 guid = "%s-%s" % (set_type, i)
+                ent_a=line[0]
+                ent_c=line[2]
                 text_a = head_ent_text
                 text_b = relation_text
                 text_c = tail_ent_text 
                 examples.append(
-                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="1"))
+                    InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="1", head=line[0],relation=line[1],tail=line[2]))
 
                 # corrupting head and tail
                 ent_a_modify = ent_a.split(":")[1].split(".")[0]
@@ -272,29 +281,25 @@ class KGProcessor(DataProcessor):
                 # corrupting head
                 text_a_candits = wn.synsets(ent_a_modify)
                 for item in text_a_candits:
-                    if item.name() == ent_a_modify:
+                    if item.name() == ent_a.split(":")[1]:
                         continue
                         
-                    if remove_entity and item.name() not in entity_list:
-                        continue
                     text_a = item.definition()
-
+                    temp_head= "wn:"+item.name()
                     examples.append(
-                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0"))
+                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0", head=line[0],relation=line[1],tail=line[2],replace=("head",temp_head)))
                 
                 #corrupting tail
                 text_c_candits = wn.synsets(ent_c_modify)
                 for item in text_c_candits:
-                    if item.name() == ent_c_modify:
-                        continue
-                        
-                    if remove_entity and item.name() not in entity_list:
+                    if item.name() == ent_c.split(":")[1]:
                         continue
                         
                     text_c = item.definition()
-
+                    temp_tail= "wn:"+item.name()
                     examples.append(
-                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0"))                                                  
+                        InputExample(guid=guid, text_a=text_a, text_b=text_b, text_c = text_c, label="0", head=line[0],relation=line[1],tail=line[2],replace=("tail",temp_tail)))
+            
         return examples
 
 def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer, print_info = True):
@@ -303,6 +308,12 @@ def convert_examples_to_features(examples, label_list, max_seq_length, tokenizer
     label_map = {label : i for i, label in enumerate(label_list)}
 
     features = []
+    if store_input:
+        if corup_type:
+            point1=0
+        else:
+            point1=0
+
     for (ex_index, example) in enumerate(examples):
         if ex_index % 10000 == 0 and print_info:
             logger.info("Writing example %d of %d" % (ex_index, len(examples)))
@@ -465,9 +476,13 @@ def main():
                         help="The output directory where the model predictions and checkpoints will be written.")
 
     ## Other parameters
-    parser.add_argument("--NLTK_corpus",
+    parser.add_argument("--store_input",
                         action='store_true',
-                        help="Whether to corrupt word by NLTK WordNet.")
+                        help="Whether to store the input")
+
+    #parser.add_argument("--NLTK_corpus",
+    #                    action='store_true',
+    #                    help="Whether to corrupt word by NLTK WordNet.")
 
     parser.add_argument("--cache_dir",
                         default="",
@@ -539,6 +554,7 @@ def main():
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
     args = parser.parse_args()
     NLTK_corpus = args.NLTK_corpus
+    store_input = args.store_input
 
     if args.server_ip and args.server_port:
         # Distant debugging - see https://code.visualstudio.com/docs/python/debugging#_attach-to-a-local-script
@@ -607,7 +623,7 @@ def main():
     train_examples = None
     num_train_optimization_steps = 0
     if args.do_train:
-        train_examples = processor.get_train_examples(args.data_dir)
+        train_examples = processor.get_train_examples(args.data_dir,corup_type=NLTK_corpus)
         num_train_optimization_steps = int(
             len(train_examples) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
         if args.local_rank != -1:
@@ -665,6 +681,7 @@ def main():
     global_step = 0
     nb_tr_steps = 0
     tr_loss = 0
+
     if args.do_train:
 
         train_features = convert_examples_to_features(
@@ -673,6 +690,8 @@ def main():
         logger.info("  Num examples = %d", len(train_examples))
         logger.info("  Batch size = %d", args.train_batch_size)
         logger.info("  Num steps = %d", num_train_optimization_steps)
+
+
         all_input_ids = torch.tensor([f.input_ids for f in train_features], dtype=torch.long)
         all_input_mask = torch.tensor([f.input_mask for f in train_features], dtype=torch.long)
         all_segment_ids = torch.tensor([f.segment_ids for f in train_features], dtype=torch.long)
@@ -680,6 +699,86 @@ def main():
         all_label_ids = torch.tensor([f.label_id for f in train_features], dtype=torch.long)
 
         train_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
+
+        if store_input:
+            #store the input to the file
+            if NLTK_corpus:
+                with open("wn_TrainResult_kg_bert2.txt", "w") as f:
+                    for idx in range(len(train_features)):
+                        label_id=all_label_ids[idx].cpu().numpy()
+                        example_ = train_examples[idx]
+                        feature_ = train_features[idx]
+                        input_ids = all_input_ids[idx].cpu().numpy()
+                        input_tokens = tokenizer.convert_ids_to_tokens(input_ids)
+
+                        actual_triple = example_.head+"\t"+example_.relation+"\t"+example_.tail
+
+                        if str(label_id)=="1":
+                            f.write("############################################################\n")
+                            f.write("The Actual Triple to Test: {}\n".format(actual_triple))
+                            f.write("\n")
+                            f.write("-----Prediction Detail-----\n")
+
+                        replace_part=example_.replace
+
+                        if replace_part==None:
+                            replace_triple = actual_triple
+                        elif replace_part[0]=="head":
+                            replace_triple = replace_part[1]+"\t"+example_.relation+ "\t"+example_.tail
+                        elif replace_part[0]=="tail":
+                            replace_triple = example_.head+"\t"+example_.relation+ "\t"+replace_part[1]
+
+                        f.write("Triple_to_Predict: {}\n".format(replace_triple))
+                        f.write("Text of Triples:{a}\t{b}\t{c}\n".format(a=example_.text_a,
+                                                          b=example_.text_b,
+                                                          c=example_.text_c))
+                        f.write("Input_Tokens: {}\n".format(",".join(input_tokens)))
+                        f.write("Input_Ids: {}\n".format(",".join([str(_) for _ in input_ids])))
+                        f.write("Label_id: {}\n".format(label_id))
+                        f.write("\n")        
+
+                print("wn_TrainResult_kg_bert2.txt finished")
+                exit()
+            else:
+                #print(train_examples[0].head,train_examples[0].relation,train_examples[0].tail)
+                with open("wn_TrainResult_kg_bert1.txt", "w") as f:
+                    for idx in range(len(train_features)):
+                        label_id=all_label_ids[idx].cpu().numpy()
+                        example_ = train_examples[idx]
+                        feature_ = train_features[idx]
+                        input_ids = all_input_ids[idx].cpu().numpy()
+                        input_tokens = tokenizer.convert_ids_to_tokens(input_ids)
+
+                        actual_triple = example_.head+"\t"+example_.relation+"\t"+example_.tail
+
+                        if str(label_id)=="1":
+                            f.write("############################################################\n")
+                            f.write("The Actual Triple to Test: {}\n".format(actual_triple))
+                            f.write("\n")
+                            f.write("-----Prediction Detail-----\n")
+
+                        replace_part=example_.replace
+
+                        if replace_part==None:
+                            replace_triple = actual_triple
+                        elif replace_part[0]=="head":
+                            replace_triple = replace_part[1]+"\t"+example_.relation+ "\t"+example_.tail
+                        elif replace_part[0]=="tail":
+                            replace_triple = example_.head+"\t"+example_.relation+ "\t"+replace_part[1]
+
+                        f.write("Triple_to_Predict: {}\n".format(replace_triple))
+                        f.write("Text of Triples:{a}\t{b}\t{c}\n".format(a=example_.text_a,
+                                                          b=example_.text_b,
+                                                          c=example_.text_c))
+                        f.write("Input_Tokens: {}\n".format(",".join(input_tokens)))
+                        f.write("Input_Ids: {}\n".format(",".join([str(_) for _ in input_ids])))
+                        f.write("Label_id: {}\n".format(label_id))
+                        f.write("\n")
+
+                print("wn_TrainResult_kg_bert1.txt finished")
+                exit()
+
+        
         if args.local_rank == -1:
             train_sampler = RandomSampler(train_data)
         else:
@@ -749,7 +848,7 @@ def main():
 
     if args.do_eval and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
         
-        eval_examples = processor.get_dev_examples(args.data_dir)
+        eval_examples = processor.get_dev_examples(args.data_dir,corup_type=NLTK_corpus)
         eval_features = convert_examples_to_features(
             eval_examples, label_list, args.max_seq_length, tokenizer)
         logger.info("***** Running evaluation *****")
@@ -828,7 +927,7 @@ def main():
             triple_str = '\t'.join(triple)
             all_triples_str_set.add(triple_str)
 
-        eval_examples = processor.get_test_examples(args.data_dir)
+        eval_examples = processor.get_test_examples(args.data_dir,corup_type=NLTK_corpus)
         eval_features = convert_examples_to_features(
             eval_examples, label_list, args.max_seq_length, tokenizer)
         logger.info("***** Running Prediction *****")
