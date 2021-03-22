@@ -1,0 +1,756 @@
+Original Sentence: glass is [mask] transparent than plastic
+glass and plastic has property transparent
+plastic has property transparent
+Similar1:0.9012355208396912, Similar2:0.9446237087249756
+Less
+
+Original Sentence: glass is [mask] transparent than sand
+glass and plastic has property transparent
+sand has property white
+Similar1:0.9012354612350464, Similar2:0.7353294491767883
+More
+
+Original Sentence: glass is [mask] transparent than gold
+glass and plastic has property transparent
+au has property gold
+Similar1:0.9012354612350464, Similar2:0.7064615488052368
+More
+
+Original Sentence: glass is [mask] transparent than metal and not plastic
+glass and plastic has property transparent
+glass has property non porous
+Similar1:0.9012354612350464, Similar2:0.7287324666976929
+More
+
+Original Sentence: glass is [mask] transparent than silver
+glass and plastic has property transparent
+silver color silver
+Similar1:0.9012354612350464, Similar2:0.8021194934844971
+More
+
+Original Sentence: glass is [mask] opaque than sand
+glass has property opaque
+dirt has property opaque
+Similar1:0.9580095410346985, Similar2:0.8127647042274475
+More
+
+Original Sentence: glass is [mask] opaque than plastic
+glass has property opaque
+plastic has property opaque
+Similar1:0.9580095410346985, Similar2:0.9589000940322876
+Less
+
+Original Sentence: glass is [mask] opaque than gold
+glass has property opaque
+metal has property opaque
+Similar1:0.9580095410346985, Similar2:0.8384965658187866
+More
+
+Original Sentence: glass is [mask] opaque than oil
+glass has property opaque
+oil has property opaque
+Similar1:0.9580095410346985, Similar2:0.8781947493553162
+More
+
+Original Sentence: glass is [mask] opaque than iron
+glass has property opaque
+metal has property opaque
+Similar1:0.9580095410346985, Similar2:0.892828106880188
+More
+
+Original Sentence: glass is [mask] opaque than silicon
+glass has property opaque
+tar has property opaque
+Similar1:0.9580095410346985, Similar2:0.8309372067451477
+More
+
+Original Sentence: glass is [mask] clear than sand
+glass has property clear
+dune erosion has quality erosion
+Similar1:0.9006257057189941, Similar2:0.7889999747276306
+More
+
+Original Sentence: glass is [mask] clear than gold
+glass has property clear
+diamonds has property clear
+Similar1:0.9006257057189941, Similar2:0.8173670172691345
+More
+
+Original Sentence: glass is [mask] clear than plastic
+glass has property clear
+plastic has property clear
+Similar1:0.9006257057189941, Similar2:0.9356772303581238
+Less
+
+Original Sentence: glass is [mask] clear than sugar
+glass has property clear
+liquid has property clear
+Similar1:0.9006257057189941, Similar2:0.815986156463623
+More
+
+Original Sentence: glass is [mask] clear than carbon
+glass has property clear
+liquid has property clear
+Similar1:0.9006257057189941, Similar2:0.8634179830551147
+More
+
+Original Sentence: glass is [mask] clear than metal
+glass has property clear
+solid figure has quality cross section
+Similar1:0.9006257057189941, Similar2:0.8434511423110962
+More
+
+Original Sentence: glass is [mask] fragile than sand
+glass has property fragile
+soft sand has property difficult to run in
+Similar1:0.923452615737915, Similar2:0.8887487053871155
+More
+
+Original Sentence: glass is [mask] fragile than gold
+glass has property fragile
+bubbles has property very fragile
+Similar1:0.923452615737915, Similar2:0.8422253131866455
+More
+
+Original Sentence: glass is [mask] fragile than plastic
+glass has property fragile
+glass has property very fragile
+Similar1:0.923452615737915, Similar2:0.8821274638175964
+More
+
+Original Sentence: glass is [mask] fragile than metal
+glass has property fragile
+elctronic components has property delicate
+Similar1:0.923452615737915, Similar2:0.8378944396972656
+More
+
+Original Sentence: glass is [mask] fragile than silver
+glass has property fragile
+glass has property very fragile
+Similar1:0.923452615737915, Similar2:0.8382351398468018
+More
+
+Original Sentence: glass is [mask] fragile than ceramic
+glass has property fragile
+porcelain has property fragile
+Similar1:0.923452615737915, Similar2:0.8942096829414368
+More
+
+Original Sentence: glass is [mask] good for drink than water
+water has property good to drink
+water has property good to drink
+Similar1:0.7930576205253601, Similar2:0.9271901249885559
+Less
+
+Original Sentence: glass is [mask] good for drink than milk
+water has property good to drink
+milk has property good for babies
+Similar1:0.7930576205253601, Similar2:0.7977492213249207
+Less
+
+Original Sentence: glass is [mask] good for drink than alcohol
+water has property good to drink
+soda has property good to drink
+Similar1:0.7930576205253601, Similar2:0.8502992391586304
+Less
+
+Original Sentence: glass is [mask] good for drink than ferment milk
+water has property good to drink
+water has property good to quench thirst
+Similar1:0.7930576205253601, Similar2:0.788968563079834
+More
+
+Original Sentence: glass is [mask] good for drink than liquid
+water has property good to drink
+water has property good to drink
+Similar1:0.7930576205253601, Similar2:0.8307265043258667
+Less
+
+Original Sentence: glass is [mask] good for drink than liquor
+water has property good to drink
+soda has property good to drink
+Similar1:0.7930576205253601, Similar2:0.850601851940155
+Less
+
+Original Sentence: glass is [mask] good for drink than rum
+water has property good to drink
+whiskey has property very tasty
+Similar1:0.7930576205253601, Similar2:0.8177711963653564
+Less
+
+Original Sentence: glass is [mask] translucent than sand
+porcelain has property translucent
+grain of sand has property very small
+Similar1:0.8724472522735596, Similar2:0.7647264003753662
+More
+
+Original Sentence: glass is [mask] translucent than gold
+porcelain has property translucent
+diamond has property translucent
+Similar1:0.8724472522735596, Similar2:0.8022344708442688
+More
+
+Original Sentence: glass is [mask] translucent than plastic
+porcelain has property translucent
+plastic has property translucent
+Similar1:0.8724472522735596, Similar2:0.9589693546295166
+Less
+
+Original Sentence: glass is [mask] translucent than silicon
+porcelain has property translucent
+jello has property translucent
+Similar1:0.8724472522735596, Similar2:0.8152384757995605
+More
+
+Original Sentence: glass is [mask] translucent than metal
+porcelain has property translucent
+metal has property opaque
+Similar1:0.8724472522735596, Similar2:0.8285866379737854
+More
+
+Original Sentence: glass is [mask] translucent than oil
+porcelain has property translucent
+porcelain has property translucent
+Similar1:0.8724472522735596, Similar2:0.8515489101409912
+More
+
+Original Sentence: glass is [mask] translucent than carbon
+porcelain has property translucent
+plastic has property translucent
+Similar1:0.8724472522735596, Similar2:0.8121628761291504
+More
+
+Original Sentence: glass is [mask] contain liquid than sand
+glass has property coloured
+sand has property gritty
+Similar1:0.8747278451919556, Similar2:0.7626123428344727
+More
+
+Original Sentence: glass is [mask] contain liquid than metal
+glass has property coloured
+metal's physical properties has property modified by alloying metal
+Similar1:0.8747278451919556, Similar2:0.81797856092453
+More
+
+Original Sentence: glass is [mask] contain liquid than gold
+glass has property coloured
+one of chemical elements has property gold
+Similar1:0.8747278451919556, Similar2:0.8449501395225525
+More
+
+Original Sentence: glass is [mask] contain liquid than sugar
+glass has property coloured
+sugar has property one kind of carbohydrate
+Similar1:0.8747278451919556, Similar2:0.8150182366371155
+More
+
+Original Sentence: glass is [mask] contain liquid than plastic
+glass has property coloured
+containers has property plastic
+Similar1:0.8747278451919556, Similar2:0.9151008129119873
+Less
+
+Original Sentence: glass is [mask] contain liquid than hydrogen
+glass has property coloured
+oxidation product of hydrogen has property water
+Similar1:0.8747278451919556, Similar2:0.8499884605407715
+More
+
+Original Sentence: glass is [mask] contain liquid than gas
+glass has property coloured
+matter has property gaseous
+Similar1:0.8747278451919556, Similar2:0.8570466637611389
+More
+
+Original Sentence: glass is [mask] very reflective than gold
+glass has property reflective
+diamond has property strong
+Similar1:0.8626856207847595, Similar2:0.796669065952301
+More
+
+Original Sentence: glass is [mask] very reflective than plastic
+glass has property reflective
+plastic has property transparent
+Similar1:0.8626856207847595, Similar2:0.8176639080047607
+More
+
+Original Sentence: glass is [mask] very reflective than sand
+glass has property reflective
+dune erosion has quality erosion
+Similar1:0.8626856207847595, Similar2:0.7892823219299316
+More
+
+Original Sentence: glass is [mask] very reflective than metal
+glass has property reflective
+metal has property heavy
+Similar1:0.8626856207847595, Similar2:0.8621666431427002
+More
+
+Original Sentence: glass is [mask] very reflective than silver
+glass has property reflective
+silver has property reflective when polished
+Similar1:0.8626856207847595, Similar2:0.8835025429725647
+Less
+
+Original Sentence: glass is [mask] reflective than sand
+glass has property reflective
+sand has property gritty
+Similar1:0.9649061560630798, Similar2:0.856772780418396
+More
+
+Original Sentence: glass is [mask] reflective than plastic
+glass has property reflective
+plastic has property transparent
+Similar1:0.9649061560630798, Similar2:0.890521228313446
+More
+
+Original Sentence: glass is [mask] reflective than gold
+glass has property reflective
+au has property gold
+Similar1:0.9649061560630798, Similar2:0.8097883462905884
+More
+
+Original Sentence: glass is [mask] reflective than metal
+glass has property reflective
+metal has property heavy
+Similar1:0.9649061560630798, Similar2:0.8814359903335571
+More
+
+Original Sentence: glass is [mask] reflective than matter
+glass has property reflective
+substance has quality essence
+Similar1:0.9649061560630798, Similar2:0.8754993081092834
+More
+
+Original Sentence: glass is [mask] reflective than silver
+glass has property reflective
+silver has property reflective when polished
+Similar1:0.9649061560630798, Similar2:0.9295315742492676
+More
+
+Original Sentence: paper is [mask] crumple than plastic
+paper has property crumpled
+poop has property disgusting
+Similar1:0.9000309705734253, Similar2:0.7487329840660095
+More
+
+Original Sentence: paper is [mask] crumple than wood
+paper has property crumpled
+wood has property chipped into pieces
+Similar1:0.9000309705734253, Similar2:0.8068649172782898
+More
+
+Original Sentence: paper is [mask] crumple than clay
+paper has property crumpled
+clay has property wet dirt
+Similar1:0.9000309705734253, Similar2:0.7700331807136536
+More
+
+Original Sentence: paper is [mask] crumple than sand
+paper has property crumpled
+sand has property gritty
+Similar1:0.9000309705734253, Similar2:0.8283242583274841
+More
+
+Original Sentence: paper is [mask] crumple than glass
+paper has property crumpled
+glass has property inverted
+Similar1:0.9000309705734253, Similar2:0.7680306434631348
+More
+
+Original Sentence: paper is [mask] crumple than gold
+paper has property crumpled
+coma has property bad
+Similar1:0.9000309705734253, Similar2:0.7437273859977722
+More
+
+Original Sentence: paper is [mask] crumple than metal
+paper has property crumpled
+ductile metal has property bent or drawn
+Similar1:0.9000309705734253, Similar2:0.7443414330482483
+More
+
+Original Sentence: paper is [mask] crumple than rice
+paper has property crumpled
+paper has property crumpled
+Similar1:0.9000309705734253, Similar2:0.682049572467804
+More
+
+Original Sentence: paper is [mask] thin than plastic
+piece of paper has property very thin
+paper page has property very thin
+Similar1:0.967429518699646, Similar2:0.8968583941459656
+More
+
+Original Sentence: paper is [mask] thin than sand
+piece of paper has property very thin
+grain of sand has property very small
+Similar1:0.967429518699646, Similar2:0.8991260528564453
+More
+
+Original Sentence: paper is [mask] thin than gold
+piece of paper has property very thin
+ribbon has property thin
+Similar1:0.967429518699646, Similar2:0.8578472137451172
+More
+
+Original Sentence: paper is [mask] thin than metal
+piece of paper has property very thin
+castanets has property lightweight
+Similar1:0.967429518699646, Similar2:0.854459822177887
+More
+
+Original Sentence: paper is [mask] thin than carbon
+piece of paper has property very thin
+hair has property lightweight
+Similar1:0.967429518699646, Similar2:0.8665529489517212
+More
+
+Original Sentence: paper is [mask] thin than water
+piece of paper has property very thin
+hair has property very thin
+Similar1:0.967429518699646, Similar2:0.8747119903564453
+More
+
+Original Sentence: paper is [mask] opaque than glass
+paper has property opaque
+glass has property opaque
+Similar1:0.9249508380889893, Similar2:0.9580095410346985
+Less
+
+Original Sentence: paper is [mask] opaque than water
+paper has property opaque
+dirty water has property opaque
+Similar1:0.9249508380889893, Similar2:0.8852773308753967
+More
+
+Original Sentence: paper is [mask] opaque than ice
+paper has property opaque
+plastic has property opaque
+Similar1:0.9249508380889893, Similar2:0.8593755960464478
+More
+
+Original Sentence: paper is [mask] opaque than crystal
+paper has property opaque
+glass has property opaque
+Similar1:0.9249508380889893, Similar2:0.9183635711669922
+More
+
+Original Sentence: paper is [mask] flat than sand
+sheets of paper has property very flat
+sand has property dry and small
+Similar1:0.9303467273712158, Similar2:0.8942998647689819
+More
+
+Original Sentence: paper is [mask] flat than stone
+sheets of paper has property very flat
+earth has property flat
+Similar1:0.9303467273712158, Similar2:0.8888071775436401
+More
+
+Original Sentence: paper is [mask] flat than plastic but plastic with rubber band
+sheets of paper has property very flat
+styrofoam has property soft
+Similar1:0.9303467273712158, Similar2:0.7938685417175293
+More
+
+Original Sentence: paper is [mask] flat than clay
+sheets of paper has property very flat
+earth has property flat
+Similar1:0.9303467273712158, Similar2:0.8317813873291016
+More
+
+Original Sentence: paper is [mask] flat than rock
+sheets of paper has property very flat
+earth has property flat
+Similar1:0.9303467273712158, Similar2:0.883996307849884
+More
+
+Original Sentence: paper is [mask] fragile than sand
+paper page has property delicate
+soft sand has property difficult to run in
+Similar1:0.9043657183647156, Similar2:0.8887487053871155
+More
+
+Original Sentence: paper is [mask] fragile than gold
+paper page has property delicate
+bubbles has property very fragile
+Similar1:0.9043657183647156, Similar2:0.8422253131866455
+More
+
+Original Sentence: paper is [mask] fragile than plastic
+paper page has property delicate
+glass has property very fragile
+Similar1:0.9043657183647156, Similar2:0.8821274638175964
+More
+
+Original Sentence: paper is [mask] fragile than sugar
+paper page has property delicate
+bubbles has property very fragile
+Similar1:0.9043657183647156, Similar2:0.8502010703086853
+More
+
+Original Sentence: paper is [mask] fragile than metal
+paper page has property delicate
+elctronic components has property delicate
+Similar1:0.9043657183647156, Similar2:0.8378944396972656
+More
+
+Original Sentence: paper is [mask] fragile than silver
+paper page has property delicate
+glass has property very fragile
+Similar1:0.9043657183647156, Similar2:0.8382351398468018
+More
+
+Original Sentence: paper is [mask] fragile than ceramic
+paper page has property delicate
+porcelain has property fragile
+Similar1:0.9043657183647156, Similar2:0.8942096829414368
+More
+
+Original Sentence: paper is [mask] white or black than carbon
+floors has property black and white in color
+gravy has property brown or white
+Similar1:0.8032166957855225, Similar2:0.8134995698928833
+Less
+
+Original Sentence: paper is [mask] white or black than sand
+floors has property black and white in color
+sand has property white
+Similar1:0.8032166957855225, Similar2:0.8651215434074402
+Less
+
+Original Sentence: paper is [mask] white or black than oil
+floors has property black and white in color
+correction fluid has property white
+Similar1:0.8032166957855225, Similar2:0.7844938635826111
+More
+
+Original Sentence: paper is [mask] white or black than metal
+floors has property black and white in color
+correction fluid has property white
+Similar1:0.8032166957855225, Similar2:0.7756061553955078
+More
+
+Original Sentence: paper is [mask] white or black than plastic
+floors has property black and white in color
+floors has property black and white in color
+Similar1:0.8032166957855225, Similar2:0.7910024523735046
+More
+
+Original Sentence: paper is [mask] durable than sand
+cardboard boxes has property strong and useful
+dune erosion has quality erosion
+Similar1:0.8393716216087341, Similar2:0.8118594884872437
+More
+
+Original Sentence: paper is [mask] durable than clay
+cardboard boxes has property strong and useful
+durable good has quality durability
+Similar1:0.8393716216087341, Similar2:0.785697877407074
+More
+
+Original Sentence: paper is [mask] durable than ceramic or plastic
+cardboard boxes has property strong and useful
+plastic bags has property convenient
+Similar1:0.8393716216087341, Similar2:0.8064050078392029
+More
+
+Original Sentence: paper is [mask] durable than silicon
+cardboard boxes has property strong and useful
+durable good has quality durability
+Similar1:0.8393716216087341, Similar2:0.7708116769790649
+More
+
+Original Sentence: paper is [mask] lightweight than plastic
+stamp pad has property lightweight
+accordian bag has property lightweight
+Similar1:0.8712244629859924, Similar2:0.8797601461410522
+Less
+
+Original Sentence: paper is [mask] lightweight than metal
+stamp pad has property lightweight
+titanium has property strong and lightweight
+Similar1:0.8712244629859924, Similar2:0.8652795553207397
+More
+
+Original Sentence: paper is [mask] lightweight than iron
+stamp pad has property lightweight
+titanium has property strong and lightweight
+Similar1:0.8712244629859924, Similar2:0.8640087246894836
+More
+
+Original Sentence: paper is [mask] lightweight than gold
+stamp pad has property lightweight
+pure gold has property very soft
+Similar1:0.8712244629859924, Similar2:0.847125232219696
+More
+
+Original Sentence: paper is [mask] lightweight than steel
+stamp pad has property lightweight
+titanium has property strong and lightweight
+Similar1:0.8712244629859924, Similar2:0.8656033277511597
+More
+
+Original Sentence: paper is [mask] lightweight than rubber
+stamp pad has property lightweight
+accordian bag has property lightweight
+Similar1:0.8712244629859924, Similar2:0.8670800924301147
+More
+
+Original Sentence: paper is [mask] lightweight than cow blood
+stamp pad has property lightweight
+cows has property innocent
+Similar1:0.8712244629859924, Similar2:0.7631198167800903
+More
+
+Original Sentence: paper is [mask] lightweight than sand
+stamp pad has property lightweight
+grain of sand has property very small
+Similar1:0.8712244629859924, Similar2:0.8476467728614807
+More
+
+Original Sentence: paper is [mask] lightweight than aluminum
+stamp pad has property lightweight
+titanium has property strong and lightweight
+Similar1:0.8712244629859924, Similar2:0.8418334722518921
+More
+
+Original Sentence: paper is [mask] lightweight than leather
+stamp pad has property lightweight
+hair has property lightweight
+Similar1:0.8712244629859924, Similar2:0.8585036993026733
+More
+
+Original Sentence: metal is [mask] hard than plastic
+metal has property heavy
+glass has property hard and brittle
+Similar1:0.9216703772544861, Similar2:0.8510696887969971
+More
+
+Original Sentence: metal is [mask] hard than sand
+metal has property heavy
+sand has property gritty
+Similar1:0.9216703772544861, Similar2:0.8834583759307861
+More
+
+Original Sentence: metal is [mask] hard than glass
+metal has property heavy
+glass has property hard and brittle
+Similar1:0.9216703772544861, Similar2:0.9108432531356812
+More
+
+Original Sentence: metal is [mask] hard than water
+metal has property heavy
+swimming in rough open water has property difficult
+Similar1:0.9216703772544861, Similar2:0.8509302139282227
+More
+
+Original Sentence: metal is [mask] hard than lead
+metal has property heavy
+lead has property very heavy
+Similar1:0.9216703772544861, Similar2:0.8670629262924194
+More
+
+Original Sentence: metal is [mask] hard than rubber
+metal has property heavy
+porcelain has property hard
+Similar1:0.9216703772544861, Similar2:0.8243983387947083
+More
+
+Original Sentence: metal is [mask] heavy than sand
+metal has property heavy
+sand has property gritty
+Similar1:0.938621461391449, Similar2:0.8476147651672363
+More
+
+Original Sentence: metal is [mask] heavy than gold
+metal has property heavy
+lead has property very heavy
+Similar1:0.938621461391449, Similar2:0.8696584105491638
+More
+
+Original Sentence: metal is [mask] heavy than plastic
+metal has property heavy
+container drums has property large
+Similar1:0.938621461391449, Similar2:0.8211582899093628
+More
+
+Original Sentence: metal is [mask] heavy than sugar
+metal has property heavy
+syrup has property sticky
+Similar1:0.938621461391449, Similar2:0.7754265069961548
+More
+
+Original Sentence: metal is [mask] heavy than rubber
+metal has property heavy
+boots has property very heavy
+Similar1:0.938621461391449, Similar2:0.833644688129425
+More
+
+Original Sentence: metal is [mask] heavy than oil
+metal has property heavy
+gasoline has property very flammable
+Similar1:0.938621461391449, Similar2:0.8325168490409851
+More
+
+Original Sentence: metal is [mask] heavy than carbon
+metal has property heavy
+earth has property very heavy
+Similar1:0.938621461391449, Similar2:0.8535130023956299
+More
+
+Original Sentence: metal is [mask] opaque than glass
+metal has property opaque
+glass has property opaque
+Similar1:0.954312801361084, Similar2:0.9580095410346985
+Less
+
+Original Sentence: metal is [mask] opaque than plastic
+metal has property opaque
+plastic has property opaque
+Similar1:0.954312801361084, Similar2:0.9589000940322876
+Less
+
+Original Sentence: metal is [mask] opaque than water
+metal has property opaque
+dirty water has property opaque
+Similar1:0.954312801361084, Similar2:0.8852773308753967
+More
+
+Original Sentence: metal is [mask] opaque than ice
+metal has property opaque
+plastic has property opaque
+Similar1:0.954312801361084, Similar2:0.8593755960464478
+More
+
+Original Sentence: metal is [mask] opaque than crystal
+metal has property opaque
+glass has property opaque
+Similar1:0.954312801361084, Similar2:0.9183635711669922
+More
+
+Original Sentence: metal is [mask] rigid than plastic
+metal has property heavy
+table has property rigid
+Similar1:0.8824712038040161, Similar2:0.864034116268158
+More
+
+Original Sentence: metal is [mask] rigid than rubber
+metal has property heavy
+hardtack has property hard and rigid
+Similar1:0.8824712634086609, Similar2:0.8580379486083984
+More
+
+Original Sentence: metal is [mask] rigid than sand
+metal has property heavy
+hardtack has property hard and rigid
+Similar1:0.8824712634086609, Similar2:0.7880620956420898
+More
+
+Original Sentence: metal is [mask] rigid than sugar
+metal has property heavy
+table has property rigid
+Similar1:0.8824712634086609, Similar2:0.8313523530960083
+More
+

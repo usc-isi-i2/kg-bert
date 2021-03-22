@@ -1,0 +1,882 @@
+RICA line: glass is [mask] transparent than plastic
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] transparent than sand
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/smooth_surfaces,/r/HasProperty,/c/en/more_likely_to_good_mirrors
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/opaque_surface,/r/HasProperty,/c/en/impenetrable_by_light
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+
+RICA line: glass is [mask] transparent than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/silver,/r/HasProperty,/c/en/less_expensive_than_gold
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+
+RICA line: glass is [mask] transparent than metal and not plastic
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+
+RICA line: glass is [mask] transparent than silver
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/chlorophyll,/r/HasProperty,/c/en/brighter_infrared_than_green
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+
+RICA line: glass is [mask] opaque than sand
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/opaque_surface,/r/HasProperty,/c/en/impenetrable_by_light
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: glass is [mask] opaque than plastic
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: glass is [mask] opaque than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+
+RICA line: glass is [mask] opaque than oil
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/opaque_surface,/r/HasProperty,/c/en/impenetrable_by_light
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+
+RICA line: glass is [mask] opaque than iron
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: glass is [mask] opaque than silicon
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+
+RICA line: glass is [mask] clear than sand
+/c/en/smooth_surfaces,/r/HasProperty,/c/en/more_likely_to_good_mirrors
+/c/en/glass,/r/HasProperty,/c/en/smooth
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/untinted_glass,/r/HasProperty,/c/en/transparent
+/c/en/hydrogen_peroxide,/r/HasProperty,/c/en/clear_and_colorless
+
+RICA line: glass is [mask] clear than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/silver,/r/HasProperty,/c/en/less_expensive_than_gold
+
+RICA line: glass is [mask] clear than plastic
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] clear than sugar
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/coke,/r/HasProperty,/c/en/better_than_pepsi
+/c/en/glass,/r/HasProperty,/c/en/smooth
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/pepsi,/r/HasProperty,/c/en/better_than_coke
+
+RICA line: glass is [mask] clear than carbon
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/coke,/r/HasProperty,/c/en/better_than_pepsi
+
+RICA line: glass is [mask] clear than metal
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/smooth_surfaces,/r/HasProperty,/c/en/more_likely_to_good_mirrors
+
+RICA line: glass is [mask] fragile than sand
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/glass,/r/HasProperty,/c/en/hard_to_scratch
+/c/en/chapped_lips,/r/HasProperty,/c/en/harder_than_moist_lips
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+
+RICA line: glass is [mask] fragile than gold
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/wisdom,/r/HasProperty,/c/en/more_precious_than_gold
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: glass is [mask] fragile than plastic
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/glass,/r/HasProperty,/c/en/hard_to_scratch
+/c/en/chapped_lips,/r/HasProperty,/c/en/harder_than_moist_lips
+
+RICA line: glass is [mask] fragile than metal
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/wisdom,/r/HasProperty,/c/en/more_precious_than_gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: glass is [mask] fragile than silver
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/wisdom,/r/HasProperty,/c/en/more_precious_than_gold
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: glass is [mask] fragile than ceramic
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+
+RICA line: glass is [mask] good for drink than water
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/suit,/r/HasProperty,/c/en/harder_to_remove_than_skirt
+/c/en/water_proof,/r/HasProperty,/c/en/better_than_water_repellant
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/olive_oil,/r/HasProperty,/c/en/better_for_one's_health_than_butter
+
+RICA line: glass is [mask] good for drink than milk
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/olive_oil,/r/HasProperty,/c/en/better_for_one's_health_than_butter
+/c/en/water_proof,/r/HasProperty,/c/en/better_than_water_repellant
+/c/en/ice,/r/HasProperty,/c/en/better_to_drink_champagne
+/c/en/pepsi,/r/HasProperty,/c/en/better_than_coke
+
+RICA line: glass is [mask] good for drink than alcohol
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/agility,/r/HasProperty,/c/en/more_important_than_strength
+/c/en/compliment,/r/HasProperty,/c/en/better_than_flattery
+
+RICA line: glass is [mask] good for drink than ferment milk
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/olive_oil,/r/HasProperty,/c/en/better_for_one's_health_than_butter
+/c/en/ice,/r/HasProperty,/c/en/better_to_drink_champagne
+/c/en/water_proof,/r/HasProperty,/c/en/better_than_water_repellant
+
+RICA line: glass is [mask] good for drink than liquid
+/c/en/compliment,/r/HasProperty,/c/en/better_than_flattery
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/water_proof,/r/HasProperty,/c/en/better_than_water_repellant
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] good for drink than liquor
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/compliment,/r/HasProperty,/c/en/better_than_flattery
+/c/en/water_proof,/r/HasProperty,/c/en/better_than_water_repellant
+/c/en/paying_with_cash,/r/HasProperty,/c/en/better_than_paying_with_check
+
+RICA line: glass is [mask] good for drink than rum
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/compliment,/r/HasProperty,/c/en/better_than_flattery
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+
+RICA line: glass is [mask] translucent than sand
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/olive_jar_of_glass,/r/HasProperty,/c/en/translucent
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+
+RICA line: glass is [mask] translucent than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: glass is [mask] translucent than plastic
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/chlorophyll,/r/HasProperty,/c/en/brighter_infrared_than_green
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+
+RICA line: glass is [mask] translucent than silicon
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] translucent than metal
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: glass is [mask] translucent than oil
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/olive_jar_of_glass,/r/HasProperty,/c/en/translucent
+
+RICA line: glass is [mask] translucent than carbon
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: glass is [mask] contain liquid than sand
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/glass,/r/HasProperty,/c/en/non_porous
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/glass,/r/HasProperty,/c/en/coloured
+
+RICA line: glass is [mask] contain liquid than metal
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/gasoline,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/glass,/r/HasProperty,/c/en/half_full_or_half_empty
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+
+RICA line: glass is [mask] contain liquid than gold
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/wisdom,/r/HasProperty,/c/en/more_precious_than_gold
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: glass is [mask] contain liquid than sugar
+/c/en/pepsi,/r/HasProperty,/c/en/better_than_coke
+/c/en/black_chocolate,/r/HasProperty,/c/en/less_sweet_than_milk_chocolate
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/coke,/r/HasProperty,/c/en/better_than_pepsi
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] contain liquid than plastic
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/glass,/r/HasProperty,/c/en/non_porous
+/c/en/zoom_lens,/r/HasProperty,/c/en/more_complex_than_normal_lens
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/bowl,/r/HasProperty,/c/en/more_than_cup
+
+RICA line: glass is [mask] contain liquid than hydrogen
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/glass,/r/HasProperty,/c/en/non_porous
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/glass,/r/HasProperty,/c/en/opaque
+
+RICA line: glass is [mask] contain liquid than gas
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/water_repellant,/r/HasProperty,/c/en/better_than_water_resistant
+/c/en/glass,/r/HasProperty,/c/en/non_porous
+
+RICA line: glass is [mask] very reflective than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+
+RICA line: glass is [mask] very reflective than plastic
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+
+RICA line: glass is [mask] very reflective than sand
+/c/en/glass,/r/HasProperty,/c/en/hard_to_scratch
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/pictures,/r/HasProperty,/c/en/higher_quality_than_others
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+
+RICA line: glass is [mask] very reflective than metal
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/water,/r/HasProperty,/c/en/much_more_stable_than_hydrogen_peroxide
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+
+RICA line: glass is [mask] very reflective than silver
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+/c/en/glossy_paint,/r/HasProperty,/c/en/easier_to_wash_than_flat_paint
+
+RICA line: glass is [mask] reflective than sand
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/stone,/r/HasProperty,/c/en/harder_than_clay
+/c/en/chapped_lips,/r/HasProperty,/c/en/harder_than_moist_lips
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: glass is [mask] reflective than plastic
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+/c/en/stone,/r/HasProperty,/c/en/harder_than_clay
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: glass is [mask] reflective than gold
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/silver,/r/HasProperty,/c/en/less_expensive_than_gold
+/c/en/children,/r/HasProperty,/c/en/less_dextrous_than_adults
+
+RICA line: glass is [mask] reflective than metal
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+/c/en/scintillation_detectors,/r/HasProperty,/c/en/more_efficient_than_gas_detectors
+/c/en/cycling,/r/HasProperty,/c/en/more_efficient_than_driving
+
+RICA line: glass is [mask] reflective than matter
+/c/en/glass,/r/HasProperty,/c/en/opaque_to_visible_light
+/c/en/glass,/r/HasProperty,/c/en/opaque
+/c/en/glass,/r/HasProperty,/c/en/non_porous
+/c/en/prevention,/r/HasProperty,/c/en/better_than_cure
+/c/en/smooth_surfaces,/r/HasProperty,/c/en/more_likely_to_good_mirrors
+
+RICA line: glass is [mask] reflective than silver
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+/c/en/silver,/r/HasProperty,/c/en/more_valuable_than_bronze
+/c/en/diamonds,/r/HasProperty,/c/en/more_expensive_than_sand
+/c/en/stone,/r/HasProperty,/c/en/harder_than_clay
+
+RICA line: paper is [mask] crumple than plastic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/plant_stalks,/r/HasProperty,/c/en/more_fibrous_than_leaves
+/c/en/pyroclastic_flows,/r/HasProperty,/c/en/much_more_hazardous_than_lava
+/c/en/circular_route,/r/HasProperty,/c/en/less_efficient_than_direct_route
+
+RICA line: paper is [mask] crumple than wood
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper,/r/HasProperty,/c/en/crumpled
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/paper_disintegrates_when,/r/HasProperty,/c/en/wet
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: paper is [mask] crumple than clay
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/paper,/r/HasProperty,/c/en/crumpled
+/c/en/paper_disintegrates_when,/r/HasProperty,/c/en/wet
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: paper is [mask] crumple than sand
+/c/en/paper,/r/HasProperty,/c/en/crumpled
+/c/en/paper_disintegrates_when,/r/HasProperty,/c/en/wet
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/writing_with_ink,/r/HasProperty,/c/en/messy
+
+RICA line: paper is [mask] crumple than glass
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper,/r/HasProperty,/c/en/crumpled
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/paper_disintegrates_when,/r/HasProperty,/c/en/wet
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: paper is [mask] crumple than gold
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/circular_route,/r/HasProperty,/c/en/less_efficient_than_direct_route
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/knitting,/r/HasProperty,/c/en/less_fun
+
+RICA line: paper is [mask] crumple than metal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/circular_route,/r/HasProperty,/c/en/less_efficient_than_direct_route
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+/c/en/knitting,/r/HasProperty,/c/en/less_fun
+
+RICA line: paper is [mask] crumple than rice
+/c/en/paper,/r/HasProperty,/c/en/crumpled
+/c/en/paper_disintegrates_when,/r/HasProperty,/c/en/wet
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_cut,/r/HasProperty,/c/en/painful
+/c/en/deflation,/r/HasProperty,/c/en/disastrous_for_balloons
+
+RICA line: paper is [mask] thin than plastic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: paper is [mask] thin than sand
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/piece_of_paper,/r/HasProperty,/c/en/very_thin
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: paper is [mask] thin than gold
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+
+RICA line: paper is [mask] thin than metal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/piece_of_paper,/r/HasProperty,/c/en/very_thin
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+
+RICA line: paper is [mask] thin than carbon
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: paper is [mask] thin than water
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/piece_of_paper,/r/HasProperty,/c/en/very_thin
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/water_vapor,/r/HasProperty,/c/en/less_dense_than_air
+
+RICA line: paper is [mask] opaque than glass
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: paper is [mask] opaque than water
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/paper,/r/HasProperty,/c/en/opaque
+
+RICA line: paper is [mask] opaque than ice
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/ice,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/ice_balls,/r/HasProperty,/c/en/harder_than_snow_balls
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: paper is [mask] opaque than crystal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: paper is [mask] flat than sand
+/c/en/sheets_of_paper,/r/HasProperty,/c/en/very_flat
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] flat than stone
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/sheets_of_paper,/r/HasProperty,/c/en/very_flat
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/piece_of_paper,/r/HasProperty,/c/en/very_thin
+
+RICA line: paper is [mask] flat than plastic but plastic with rubber band
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/black_chocolate,/r/HasProperty,/c/en/less_sweet_than_milk_chocolate
+/c/en/sausages,/r/HasProperty,/c/en/less_sweet_than_strawberries
+
+RICA line: paper is [mask] flat than clay
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/sheets_of_paper,/r/HasProperty,/c/en/very_flat
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+
+RICA line: paper is [mask] flat than rock
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/sheets_of_paper,/r/HasProperty,/c/en/very_flat
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/piece_of_paper,/r/HasProperty,/c/en/very_thin
+
+RICA line: paper is [mask] fragile than sand
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] fragile than gold
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+
+RICA line: paper is [mask] fragile than plastic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+/c/en/diamond,/r/HasProperty,/c/en/harder_than_glass
+
+RICA line: paper is [mask] fragile than sugar
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/bible_paper,/r/HasProperty,/c/en/very_fragile
+/c/en/paper_page,/r/HasProperty,/c/en/delicate
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+
+RICA line: paper is [mask] fragile than metal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+
+RICA line: paper is [mask] fragile than silver
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/human_eggs,/r/HasProperty,/c/en/more_fragile_than_cows_eggs
+
+RICA line: paper is [mask] fragile than ceramic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/small_print,/r/HasProperty,/c/en/harder_to_read_than_large_print
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/dried_leaves,/r/HasProperty,/c/en/more_fragile_than_fresh_green_ones
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] white or black than carbon
+/c/en/white_house,/r/HasProperty,/c/en/more_white_than_green_with_purple_polka_dots
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/normaly_paper,/r/HasProperty,/c/en/white
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+
+RICA line: paper is [mask] white or black than sand
+/c/en/white_house,/r/HasProperty,/c/en/more_white_than_green_with_purple_polka_dots
+/c/en/normaly_paper,/r/HasProperty,/c/en/white
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] white or black than oil
+/c/en/white_house,/r/HasProperty,/c/en/more_white_than_green_with_purple_polka_dots
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/normaly_paper,/r/HasProperty,/c/en/white
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] white or black than metal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/white_house,/r/HasProperty,/c/en/more_white_than_green_with_purple_polka_dots
+/c/en/normaly_paper,/r/HasProperty,/c/en/white
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+
+RICA line: paper is [mask] white or black than plastic
+/c/en/white_house,/r/HasProperty,/c/en/more_white_than_green_with_purple_polka_dots
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/normaly_paper,/r/HasProperty,/c/en/white
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+/c/en/penumbra,/r/HasProperty,/c/en/lighter_colored_than_sunspot
+
+RICA line: paper is [mask] durable than sand
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/plant_stalks,/r/HasProperty,/c/en/more_fibrous_than_leaves
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/wooden_hangers,/r/HasProperty,/c/en/better_than_plastic_ones
+
+RICA line: paper is [mask] durable than clay
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/wooden_hangers,/r/HasProperty,/c/en/better_than_plastic_ones
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/plant_stalks,/r/HasProperty,/c/en/more_fibrous_than_leaves
+/c/en/cycling,/r/HasProperty,/c/en/more_efficient_than_driving
+
+RICA line: paper is [mask] durable than ceramic or plastic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/wooden_hangers,/r/HasProperty,/c/en/better_than_plastic_ones
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/suit,/r/HasProperty,/c/en/harder_to_remove_than_skirt
+
+RICA line: paper is [mask] durable than silicon
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/plant_stalks,/r/HasProperty,/c/en/more_fibrous_than_leaves
+/c/en/wooden_hangers,/r/HasProperty,/c/en/better_than_plastic_ones
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] lightweight than plastic
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/wooden_hangers,/r/HasProperty,/c/en/better_than_plastic_ones
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] lightweight than metal
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/soft_clothing,/r/HasProperty,/c/en/more_comfortable_than_rough_clothing
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: paper is [mask] lightweight than iron
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/soft_clothing,/r/HasProperty,/c/en/more_comfortable_than_rough_clothing
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+
+RICA line: paper is [mask] lightweight than gold
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/paper_page,/r/HasProperty,/c/en/very_thin
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/sheet_of_paper,/r/HasProperty,/c/en/thin
+/c/en/granite,/r/HasProperty,/c/en/less_porous_than_marble
+
+RICA line: paper is [mask] lightweight than steel
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/soft_clothing,/r/HasProperty,/c/en/more_comfortable_than_rough_clothing
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: paper is [mask] lightweight than rubber
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+
+RICA line: paper is [mask] lightweight than cow blood
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/sausages,/r/HasProperty,/c/en/less_sweet_than_strawberries
+/c/en/raisins,/r/HasProperty,/c/en/more_nutritious_than_grapes
+
+RICA line: paper is [mask] lightweight than sand
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: paper is [mask] lightweight than aluminum
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+/c/en/small_automobiles,/r/HasProperty,/c/en/more_economical_than_larger_automobiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+
+RICA line: paper is [mask] lightweight than leather
+/c/en/paper_menu,/r/HasProperty,/c/en/less_durable_than_plastic_menu
+/c/en/cotton_towels,/r/HasProperty,/c/en/more_absorbent_than_synthetic_textiles
+/c/en/simple_sentences,/r/HasProperty,/c/en/more_useful_than_spicy_sausages
+/c/en/monochrome,/r/HasProperty,/c/en/more_stable_than_complimentary_colors
+/c/en/wood,/r/HasProperty,/c/en/less_dense_than_water
+
+RICA line: metal is [mask] hard than plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] hard than sand
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_gold
+
+RICA line: metal is [mask] hard than glass
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_iron
+
+RICA line: metal is [mask] hard than water
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_gold
+
+RICA line: metal is [mask] hard than lead
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] hard than rubber
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/steel,/r/HasProperty,/c/en/harder_than_iron
+
+RICA line: metal is [mask] heavy than sand
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_gold
+
+RICA line: metal is [mask] heavy than gold
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_gold
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/most_metals,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] heavy than plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/most_metals,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] heavy than sugar
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] heavy than rubber
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/steel,/r/HasProperty,/c/en/harder_than_iron
+
+RICA line: metal is [mask] heavy than oil
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] heavy than carbon
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/steel,/r/HasProperty,/c/en/harder_than_iron
+
+RICA line: metal is [mask] opaque than glass
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+
+RICA line: metal is [mask] opaque than plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/most_metals,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] opaque than water
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] opaque than ice
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/most_metals,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] opaque than crystal
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/aluminium,/r/HasProperty,/c/en/much_harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_gold
+/c/en/most_metals,/r/HasProperty,/c/en/harder_than_plastic
+
+RICA line: metal is [mask] rigid than plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] rigid than rubber
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] rigid than sand
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+
+RICA line: metal is [mask] rigid than sugar
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wool
+/c/en/steel,/r/HasProperty,/c/en/harder_than_plastic
+/c/en/metal,/r/HasProperty,/c/en/harder_than_wood
+/c/en/steel,/r/HasProperty,/c/en/harder_than_lead
+/c/en/iron,/r/HasProperty,/c/en/harder_than_wood
+
