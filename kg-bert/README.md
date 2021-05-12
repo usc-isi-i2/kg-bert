@@ -1,5 +1,8 @@
 __#__ KG-BERT: BERT for Knowledge Graph Completion
 
+When you want to run the kg-bert baseline, you should set up the environment based on the requirement.txt。
+If you want to run the other baselines or code, you should set up the environment based on the requirement2.txt
+
 The repository is modified from [pytorch-pretrained-BERT](https://github.com/huggingface/pytorch-pretrained-BERT) and tested on Python 3.5+.
 
 
