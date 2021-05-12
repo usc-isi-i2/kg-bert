@@ -1,0 +1,3 @@
+sand	transparent	0.43480698361664877
+sand	reflective	0.6607831128566641
+metal	reflective	0.7268301613564063

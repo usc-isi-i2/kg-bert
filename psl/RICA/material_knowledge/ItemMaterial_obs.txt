@@ -1,0 +1,39 @@
+Item_hydrogen	hydrogen
+Item_rubber	rubber
+Item_plastic_but_plastic_with_rubber_band	plastic but plastic with rubber band
+Item_sand	sand
+Item_rum	rum
+Item_steel	steel
+Item_wood	wood
+Item_gas	gas
+Item_liquid	liquid
+Item_aluminum	aluminum
+Item_matter	matter
+Item_silicon	silicon
+Item_cow_blood	blood
+Item_iron	iron
+Item_ice	ice
+Item_glass	glass
+Item_silver	silver
+Item_milk	milk
+Item_liquor	liquor
+Item_stone	stone
+Item_leather	leather
+Item_sugar	sugar
+Item_water	water
+Item_ferment_milk	ferment milk
+Item_metal_and_not_plastic	metal and not plastic
+Item_oil	oil
+Item_gold	gold
+Item_carbon	carbon
+Item_crystal	crystal
+Item_clay	clay
+Item_paper	paper
+Item_ceramic	ceramic
+Item_rice	rice
+Item_ceramic_or_plastic	ceramic or plastic
+Item_plastic	plastic
+Item_rock	rock
+Item_lead	lead
+Item_metal	metal
+Item_alcohol	alcohol

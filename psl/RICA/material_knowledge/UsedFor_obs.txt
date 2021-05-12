@@ -1,0 +1,2 @@
+glass	contain liquid	0.8151925181149052
+gold	contain liquid	0.4455069425878013

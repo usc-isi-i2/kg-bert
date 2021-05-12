@@ -1,0 +1,2 @@
+milk	good for drink	0.4930702248158756
+ferment milk	good for drink	0.41016063320523566
